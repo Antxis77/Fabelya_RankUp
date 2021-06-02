@@ -13,8 +13,6 @@ import java.util.logging.Logger;
  */
 
 public enum YmlFile {
-    CONFIG("config.yml"),
-    CONFIG_SHOP("configshop.yml"),
     LANG("lang.yml");
 
     private final String fileName;
