@@ -1,0 +1,131 @@
+#######       EssentialAdmin       #######
+empty: ' '
+serveur-name: '&cRedLandFarm &7» &r'
+serveur-name-console: 'RedLandFarm » '
+teams-prefix: '&6Équipe &7» &r'
+contact-admin: '&c/! Veuillez contacter un Administrateur /!'
+mod-to-console: 'Seul un joueur peux executer cette commande !'
+no-permission: '&cVous n''avez pas la permission !'
+no-game: '&cCette commande n''est pas activée pour le moment !'
+no-allow: '&cVous n''avez pas la permission !'
+player-join-event: '&2[+] &9{teams} {player} &avient de se connecter !'
+player-leave-event: '&4[-] &9{teams} {player} &cvient de se déconnecter !'
+msg-format: '&9{teams} {player} &f: &7'
+
+#######       SyntaxCommands       #######
+cmd-add: '&cErreur: /add <player>'
+cmd-remove: '&cErreur: /remove <player>'
+cmd-teams-join: '&cErreur: /teams <join> <équipe>'
+cmd-teams-leave: '&cErreur: /teams <leave>'
+cmd-teams-create: '&cErreur: /teams <create> <nom>'
+cmd-teams-disband: '&cErreur: /teams <disband>'
+cmd-teams-show: '&cErreur: /teams <show> <équipe>'
+cmd-teams-deposit: '&cErreur: /deposit <argent>'
+cmd-teams-invite-info: '&cErreur: /teams <invite> <info>'
+cmd-teams-invite-add: '&cErreur: /teams <invite> <add> <player>'
+cmd-teams-invite-remove: '&cErreur: /teams <invite> <remove> <player>'
+cmd-teams-kick: '&cErreur: /teams <kick> <player>'
+
+#######       Perms       #######
+redlandfarm-admin-perm: 'redlandfarm.admin'
+redlandfarm-modo-perm: 'redlandfarm.modo'
+redlandfarm-play-perm: 'redlandfarm.play'
+
+#######       Shop       #######
+shop-allow: '&7Vous avez vendu &6{amount} {block} &7pour : &6{price} !'
+shop-deny: '&cVous n''avez pas assez de {block} à vendre !'
+price-template: '&7Prix de revente :&6 {price} RedCoins'
+click-for-buy: '&aClique pour tout revendre'
+
+#######       GameMessage       #######
+player-already-add: '&c{player} has already add !'
+player-add: '&a{player} has add !'
+player-already-remove: '&c{player} was not added !'
+player-remove: '&c{player} was remove !'
+list-player: '&7>> Joueurs qui participent <<'
+list-player-null: '&7>> Aucun joueur ne participe <<'
+
+no-player: '&cCe joueur n''est pas connecté !'
+
+#######       TEAMS       #######
+already-teams: '&cCette équipe existe déjà !'
+already-have-teams: '&cVous êtes déjà dans une équipe !'
+no-teams: '&cCette équipe n''existe pas !'
+no-player-teams: '&cVous n''avez pas d''équipe !'
+no-target-teams: '&cCe joueur est déjà dans une équipe !'
+
+#Owner Teams :
+no-owner: '&cVous n''êtes pas le Créateur de l''équipe !'
+no-owner-teams: '&cVous ne pouvez pas quitter votre équipe en tant que Créateur'
+
+#Money Teams :
+no-money: '&cVous ne pouvez pas déposser autant de RedCoins !'
+no-amount: '&cVous n''avez pas assez de RedCoins !'
+money-teams: '&7Vous avez dépossé &6{price} RedCoins &7l''argent de l''équipe.'
+player-deposit: '§6Le joueur §e{player} §6vient de deposée &e{price} §6a l''équipe !'
+
+#Create Teams :
+create-teams: '&aVous avez crée l''équipe &9{teams} &a!'
+create-teams-broadcast: '&6Le joueur &e{player} &6vient de créer l''équipe &9{teams} &6!'
+
+#Disband Teams :
+disband-teams: '&cVous avez dissout l''équipe &9{teams} &c!'
+disband-teams-player: '§cVotre équipe vient d''être dissoute !'
+disband-teams-broadcast: '&cLe joueur &e{player} &cvient de dissoudre l''équipe &9{teams} &c!'
+
+#Invite Teams :
+invite-teams-player: '&e{player} &6vient d''être invité dans votre équipe !'
+already-invite-teams: '§cVous avez déjà invité ce joueur !'
+owner-invite-teams: '§aVous avez invité §e{player} §adans votre équipe !'
+invite-info: '&6Vous avez &9{amount} &6invitation(s) en attentes !'
+invite-remove: '&aVous n''invitez plus &e{player} &aà rejoindre votre équipe !'
+no-invitation: '&cVous n''avez pas invité ce joueur dans votre équipe !'
+target-invite-teams: |-
+  §6{player} §avous invite dans son équipe !
+  §eUtilisez la commande §6/teams join {teams} §epour rejoindre !
+
+#Join Teams :
+join-teams: '&aVous avez rejoint l''équipe &9{teams} &a!'
+no-invite: '§cVous n''avez pas reçu d''invitation de cette équipe !'
+join-teams-player: '&a{player} &6vien de rejoindre votre equipe !'
+
+#Leave Teams :
+leave-teams: '&cVous avez quitté l''équipe &9{teams} &c!'
+leave-player: '§cLe joueur §e{player} §cvient de quitter l''équipe !'
+
+#Kick Teams :
+owner-kick: '&cVous avez expulsé &e{player} de votre équipe !'
+player-kick: '&e{player} &cvient d''être expulsé de votre équipe !'
+target-kick: '&cVous avez été expulsé de votre équipe !'
+
+
+msg-game-prepare: |-
+  &7Bienvenue dans le jeu &cRedLandFarm &7!
+  &7Une partie est en cours de préparation, si tu souhaites
+  &7participer je t'invite à rejoindre ou créer
+  &7une équipe à partir des commandes /teams !
+
+msg-gamestart: '&aLancement de la partie !'
+msg-gamestop: '&cLa partie vient de se terminer !'
+msg-game-spectator: '&fVous ne participez pas à la partie ! Mais vous pouvez la regarder en mode Spéctateur !'
+msg-gamestart-spectator: '&cVous ne faites pas partie de la partie ! Revenez pour la prochaine partie !'
+
+msg-syntaxe-teams: |-
+  &cErreur: &7Listes de la commande /teams
+  &c/teams create <nom>
+  &c/teams join <équipe>
+  &c/teams diband
+  &c/teams leave
+  &c/teams show <équipe>
+
+msg-syntaxe-teams-invite: |-
+  &cErreur: &7Listes de la commande /teams invite
+  &c/teams invite add <nom>
+  &c/teams invite remove <nom>
+  &c/teams invite info
+
+msg-syntaxe-player: |-
+  &cErreur: &7Listes de la commande /player
+  &c/player add <player>
+  &c/player remove <player>
+  &c/player list

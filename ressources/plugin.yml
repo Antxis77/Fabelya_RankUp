@@ -1,0 +1,13 @@
+main: fr.anthonydu77.rankup.Main
+name: RedLandFarm
+description: Plugin de RedLandFarm
+author: Anthonydu77
+version: 0.0.1
+softdepend: [ Vault ]
+api-version: 1.16
+
+commands:
+  shop:
+    description: Permet d'afficher le shop
+    aliases:  #No aliases
+    permission: redlandfarm.modo
