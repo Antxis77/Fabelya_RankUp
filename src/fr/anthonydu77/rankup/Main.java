@@ -2,6 +2,7 @@ package fr.anthonydu77.rankup;
 
 import fr.anthonydu77.rankup.listeners.PlayerEvents;
 import fr.anthonydu77.rankup.managers.YmlFile;
+import fr.anthonydu77.rankup.managers.config.RankUpSettings;
 import fr.anthonydu77.rankup.utils.GuiManager;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
@@ -30,6 +31,7 @@ public class Main extends JavaPlugin {
     private static final Logger log = Logger.getLogger("Minecraft");
     private final String log_prefix = "[RankUp] - ";
     private static Economy economy;
+    private RankUpSettings rankUpSettings;
     private final GuiManager GuiManager = new GuiManager();
     private File fFileRankUp;
     private File fFilePlayers;
@@ -64,6 +66,8 @@ public class Main extends JavaPlugin {
 
     private void registerYamls() {
 
+        rankUpSettings = (RankUpSettings) registerYamls(YmlFile.CONFIG, RankUpSettings.class);
+
         fFileRankUp = new File(Main.getInstance().getDataFolder(), "rankup.yml");
 
         fFilePlayers = new File(Main.getInstance().getDataFolder(), "players.yml");
@@ -71,6 +75,10 @@ public class Main extends JavaPlugin {
         YmlFile.LANG.create(log);
 
         log.info(log_prefix + "Register Yaml is done !");
+    }
+
+    public RankUpSettings getRankUpSettings() {
+        return rankUpSettings;
     }
 
     public static Main getInstance() {

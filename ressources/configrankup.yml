@@ -1,0 +1,107 @@
+# Gueux -> Campagnard
+gueux_mobs_kill: 20
+gueux_iron_ingot: 16
+gueux_money: 1000
+
+# Campagnard -> Villageois
+campagnard_mobs_kill: 50
+campagnard_iron_ingot: 32
+campagnard_gold_ingot: 8
+campagnard_money: 3000
+
+# Villageois -> Ouvrier
+villageois_mobs_kill: 100
+villageois_iron_ingot: 64
+villageois_gold_ingot: 32
+villageois_diamond_ingot: 3
+villageois_gold_apple: 5
+villageois_money: 7000
+
+# Ouvrier -> Ecuyer
+ouvrier_mobs_kill: 200
+ouvrier_iron_ingot: 100
+ouvrier_gold_ingot: 64
+ouvrier_diamond_ingot: 5
+ouvrier_money: 10000
+
+# Ecuyer -> Cavalier
+ecuyer_skeleton_kill: 200
+ecuyer_iron_ingot: 150
+ecuyer_gold_ingot: 100
+ecuyer_diamond_ingot: 10
+ecuyer_money: 20000
+
+# Cavalier -> Caporal
+cavalier_zombie_kill: 500
+cavalier_iron_ingot: 200
+cavalier_gold_ingot: 150
+cavalier_diamond_ingot: 16
+cavalier_gold_apple: 64
+cavalier_money: 50000
+
+# Caporal -> Colonels
+caporal_withers_kill: 1
+caporal_iron_ingot: 256
+caporal_gold_ingot: 200
+caporal_diamond_ingot: 32
+caporal_emerald_ingot: 3
+caporal_money: 100000
+
+# Colonels -> Marechal
+colonels_dragon_kill: 1
+colonels_iron_ingot: 1024
+colonels_gold_ingot: 256
+colonels_diamond_ingot: 64
+colonels_emerald_ingot: 5
+colonels_money: 150000
+
+# Marechal -> Commandant
+marechal_withers_kill: 5
+marechal_boss_guardian_kill: 1
+marechal_guardian_kill: 50
+marechal_iron_block: 192
+marechal_gold_block: 512
+marechal_diamond_ingot: 100
+marechal_gold_apple: 128
+marechal_emerald_ingot: 16
+marechal_money: 500000
+
+# Commandant -> Compte
+commandant_dragons_kill: 5
+commandant_withers_kill: 15
+commandant_enderman_kill: 2000
+commandant_gold_block: 192
+commandant_diamond_ingot: 128
+commandant_gold_apple: 320
+commandant_emerald_ingot: 32
+commandant_money: 750000
+
+# Compte -> Souverain
+compte_dragons_kill: 10
+compte_withers_kill: 15
+compte_mobs_kill: 5000
+compte_iron_block: 320
+compte_gold_block: 320
+compte_diamond_ingot: 320
+compte_emerald_ingot: 64
+compte_money: 1000000
+
+# Souverain -> Roi
+souverain_dragons_kill: 15
+souverain_withers_kill: 20
+souverain_iron_block: 640
+souverain_gold_block: 640
+souverain_diamond_block: 64
+souverain_cheat_apple: 1
+souverain_emerald_ingot: 124
+souverain_money: 5000000
+
+# Roi -> Empereur
+roi_dragons_kill: 30
+roi_withers_kill: 50
+roi_mobs_kill: 20000
+roi_iron_block: 1024
+roi_gold_block: 1024
+roi_diamond_block: 640
+roi_emerald_ingot: 320
+roi_money: 10000000

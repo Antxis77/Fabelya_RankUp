@@ -17,111 +17,32 @@ public enum Lang {
     //#######       EssentialAdmin       #######
     SERVEUR_NAME,
     SERVEUR_NAME_CONSOLE,
-    TEAMS_PREFIX,
-    CONTACT_ADMIN,
-    MOD_TO_CONSOLE,
     NO_PERMISSION,
     NO_ALLOW,
-    MSG_FORMAT,
-    NO_GAME,
-    PLAYER_JOIN_EVENT,
-    PLAYER_LEAVE_EVENT,
+    MOD_TO_CONSOLE,
 
-    //#######       Shop       #######
-    SHOP_ALLOW,
-    SHOP_DENY,
-    PRICE_TEMPLATE,
-    CLICK_FOR_BUY,
+    MSG_MOBS_KILL,
+    MSG_MONEY,
+    MSG_IRON_INGOT,
+    MSG_GOLD_INGOT,
+    MSG_DIAMOND_INGOT,
+    MSG_EMERALD_INGOT,
+    MSG_IRON_BLOCK,
+    MSG_GOLD_BLOCK,
+    MSG_DIAMOND_BLOCK,
+    MSG_EMERALD_BLOCK,
+    MSG_GOLD_APPLE,
+    MSG_CHEAT_APPLE,
+    MSG_WITHERS_KILL,
+    MSG_DRAGONS_KILL,
+    MSG_GUARDIANS_BOSS_KILL,
+    MSG_GUARDIANS_KILL,
+    MSG_ENDERMANS_KILL,
+    MSG_SKELETONS_KILL,
+    MSG_ZOMBIES_KILL,
 
-    //#######       OperatorCommands       #######
-    PLAYER_ALREADY_ADD,
-    PLAYER_ADD,
-    PLAYER_ALREADY_REMOVE,
-    PLAYER_REMOVE,
-    LIST_PLAYER,
-    LIST_PLAYER_NULL,
+    MSG_SYNTAXE_RANKUP,
 
-    //#######       GameMessage       #######
-    MSG_GAME_PREPARE,
-    MSG_GAMESTART,
-    MSG_GAMESTOP,
-    MSG_GAME_SPECTATOR,
-    MSG_GAMESTART_SPECTATOR,
-
-    //#######       SyntaxCommands       #######
-    CMD_ADD,
-    CMD_REMOVE,
-    CMD_TEAMS,
-    CMD_TEAMS_JOIN,
-    CMD_TEAMS_LEAVE,
-    CMD_TEAMS_CREATE,
-    CMD_TEAMS_DISBAND,
-    CMD_TEAMS_SHOW,
-    CMD_TEAMS_DEPOSIT,
-    CMD_TEAMS_INVITE_INFO,
-    CMD_TEAMS_INVITE_ADD,
-    CMD_TEAMS_INVITE_REMOVE,
-    CMD_TEAMS_KICK,
-
-    //#######       Perms       #######
-    REDLANDFARM_ADMIN_PERM,
-    REDLANDFARM_MODO_PERM,
-    REDLANDFARM_PLAY_PERM,
-
-    //#######       TEAMS       #######
-    ALREADY_TEAMS,
-    NO_TEAMS,
-    NO_PLAYER_TEAMS,
-    ALREADY_HAVE_TEAMS,
-    NO_TARGET_TEAMS,
-
-    //#Owner Teams :
-    NO_OWNER,
-    NO_OWNER_TEAMS,
-
-    //#Money Teams :
-    NO_MONEY,
-    NO_AMOUNT,
-    MONEY_TEAMS,
-    PLAYER_DEPOSIT,
-
-    //#Create Teams :
-    CREATE_TEAMS_BROADCAST,
-    CREATE_TEAMS,
-
-    //#Disband Teams :
-    DISBAND_TEAMS,
-    DISBAND_TEAMS_PLAYER,
-    DISBAND_TEAMS_BROADCAST,
-
-    //#Invite Teams :
-    ALREADY_INVITE_TEAMS,
-    INVITE_TEAMS_PLAYER,
-    OWNER_INVITE_TEAMS,
-    TARGET_INVITE_TEAMS,
-    INVITE_INFO,
-    INVITE_REMOVE,
-    NO_INVITATION,
-
-    //#Join Teams :
-    JOIN_TEAMS,
-    NO_INVITE,
-    JOIN_TEAMS_PLAYER,
-
-    //#Leave Teams :
-    LEAVE_TEAMS,
-    LEAVE_PLAYER,
-
-    //#Kick Teams :
-    OWNER_KICK,
-    PLAYER_KICK,
-    TARGET_KICK,
-
-    //#######       Other       #######
-    NO_PLAYER,
-    MSG_SYNTAXE_TEAMS,
-    MSG_SYNTAXE_TEAMS_INVITE,
-    MSG_SYNTAXE_PLAYER,
     EMPTY;
 
     private static final Map<Lang, String> VALUES = new HashMap<>();

@@ -12,9 +12,9 @@ import java.util.List;
  * Created by Anthonydu77 02/06/2021 inside the package - fr.anthonydu77.rankup.managers.apiclass
  */
 
-public class TeamsManagers {
+public class RankUpManagers {
 
-    private static final TeamsManagers teamsManagers = new TeamsManagers();
+    private static final RankUpManagers teamsManagers = new RankUpManagers();
     final private Main instance = Main.getInstance();
 
     List<String> lListPlayerTeams;
@@ -26,7 +26,7 @@ public class TeamsManagers {
     List<String> lTeamsList;
     List<String> lPlayerList;
 
-    public static TeamsManagers getTeamsManager() {
+    public static RankUpManagers getTeamsManager() {
         return teamsManagers;
     }
 
@@ -57,11 +57,14 @@ public class TeamsManagers {
         data_Rankup.set(player + ".Emerald_Block", dnbr_init);
 
         data_Rankup.set(player + ".Gold_Apple", dnbr_init);
+        data_Rankup.set(player + ".Cheat_Apple", dnbr_init);
         data_Rankup.set(player + ".Withers", dnbr_init);
         data_Rankup.set(player + ".Dragon", dnbr_init);
         data_Rankup.set(player + ".Boss_Guardian", dnbr_init);
         data_Rankup.set(player + ".Guardian", dnbr_init);
         data_Rankup.set(player + ".Enderman", dnbr_init);
+        data_Rankup.set(player + ".Skeletons", dnbr_init);
+        data_Rankup.set(player + ".Zombie", dnbr_init);
 
         return onSave();
     }
@@ -85,6 +88,18 @@ public class TeamsManagers {
      */
     public String getRankName(Player player) {
         return data_Rankup.getString(player.getName() + ".Rank");
+    }
+
+    /**
+     * set player rank
+     *
+     * @param player Name of the player - not null
+     * @param sRank Name of rank - not null
+     * @return Player rank name
+     */
+    public boolean setRankName(Player player, String sRank) {
+        data_Rankup.set(player + ".Rank", sRank);
+        return onSave();
     }
 
     /**
@@ -452,6 +467,75 @@ public class TeamsManagers {
      */
     public boolean setEnderman(Player player, double dNumbers) {
         data_Rankup.set(player + ".Enderman", dNumbers);
+        return onSave();
+    }
+
+    /**
+     * Get all player Skeletons
+     *
+     * @param player Name of the player - not null
+     * @return Player Skeletons numbers
+     */
+    public double getSkeletons(Player player) {
+        onLoad();
+        return data_Rankup.getDouble(player + ".Skeletons");
+    }
+
+    /**
+     * Set player Skeletons
+     *
+     * @param player Name of the player - not null
+     * @param dNumbers Numbers of Skeletons - not null
+     * @return if the save is correct (boolean)
+     */
+    public boolean setSkeletons(Player player, double dNumbers) {
+        data_Rankup.set(player + ".Skeletons", dNumbers);
+        return onSave();
+    }
+
+    /**
+     * Get all player Zombie
+     *
+     * @param player Name of the player - not null
+     * @return Player Zombie numbers
+     */
+    public double getZombie(Player player) {
+        onLoad();
+        return data_Rankup.getDouble(player + ".Zombie");
+    }
+
+    /**
+     * Set player Zombie
+     *
+     * @param player Name of the player - not null
+     * @param dNumbers Numbers of Zombie - not null
+     * @return if the save is correct (boolean)
+     */
+    public boolean setZombie(Player player, double dNumbers) {
+        data_Rankup.set(player + ".Zombie", dNumbers);
+        return onSave();
+    }
+
+    /**
+     * Get all player Cheat_Apple
+     *
+     * @param player Name of the player - not null
+     * @return Player Cheat_Apple numbers
+     */
+    public double getCheat_Apple(Player player) {
+        onLoad();
+        return data_Rankup.getDouble(player + ".Cheat_Apple");
+    }
+
+    /**
+     * Set player Cheat_Apple
+     *
+     * @param player Name of the player - not null
+     * @param dNumbers Numbers of Cheat_Apple - not null
+     * @return if the save is correct (boolean)
+     */
+    public boolean setCheat_Apple(Player player, double dNumbers) {
+        data_Rankup.set(player + ".Cheat_Apple", dNumbers);
         return onSave();
     }
 

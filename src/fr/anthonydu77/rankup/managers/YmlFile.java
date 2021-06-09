@@ -13,6 +13,7 @@ import java.util.logging.Logger;
  */
 
 public enum YmlFile {
+    CONFIG("configrankup.yml"),
     LANG("lang.yml");
 
     private final String fileName;
